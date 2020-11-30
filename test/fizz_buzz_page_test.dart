@@ -11,7 +11,7 @@ void main() {
     });
 
     testGoldens('default', (tester) async {
-      await tester.pumpWidgetBuilder(page);
+      await tester.pumpWidgetBuilder(page, surfaceSize: Device.phone.size);
       await multiScreenGolden(tester, 'fizz_buzz_page/default');
     });
 
