@@ -73,7 +73,8 @@ class FizzBuzzButton extends StatelessWidget {
           onTap: () {
             onPressed(type);
           },
-          child: Center(child: Text(_title())),
+          child: Container(
+              width: 100, height: 100, child: Center(child: Text(_title()))),
         ),
       ),
     );
