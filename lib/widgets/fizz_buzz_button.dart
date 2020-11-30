@@ -4,7 +4,7 @@ enum FizzBuzzButtonType {
   fizz,
   buzz,
   number,
-  bomb,
+  fizzBuzz,
 }
 
 class FizzBuzzButton extends StatelessWidget {
@@ -31,8 +31,8 @@ class FizzBuzzButton extends StatelessWidget {
       case FizzBuzzButtonType.buzz:
         return 'Buzz';
 
-      case FizzBuzzButtonType.bomb:
-        return 'Bomb!';
+      case FizzBuzzButtonType.fizzBuzz:
+        return 'FizzBuzz!';
 
       default:
         assert(false, 'invalid type');
@@ -51,7 +51,7 @@ class FizzBuzzButton extends StatelessWidget {
       case FizzBuzzButtonType.buzz:
         return Colors.greenAccent;
 
-      case FizzBuzzButtonType.bomb:
+      case FizzBuzzButtonType.fizzBuzz:
         return Colors.redAccent;
 
       default:
