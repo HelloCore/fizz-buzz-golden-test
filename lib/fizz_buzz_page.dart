@@ -25,10 +25,8 @@ class _FizzBuzzPageState extends State<FizzBuzzPage> {
 
     setState(() {
       if (type == target) {
-        print('at $targetNo type $type');
         _score += 1;
       } else {
-        print('at $targetNo type $type target $target');
         _miss += 1;
       }
     });
